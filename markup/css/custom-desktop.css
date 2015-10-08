@@ -687,6 +687,7 @@ span.ico-sort-desc {
     padding: 6px 10px;
     z-index: 1;
     -webkit-appearance: none;
+	line-height: 30px;
 }
 
 /* asset filter tags on search field styles */
