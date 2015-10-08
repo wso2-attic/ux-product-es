@@ -36,11 +36,6 @@
 </head>
 
 <body>
-
-    <div class="wr-modelpopup">
-        <div class="modelpopup-content"><!-- dynamic content --></div>
-        <div class="modelpopup-bg"></div>
-    </div>
     <div class="container col-lg-12 col-md-12 col-sm-12">
 
         <!-- header -->
@@ -76,7 +71,7 @@
 
                         <div class="wr-input-control padding-bottom-double padding-left-double padding-right-double">
                             <button class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large"
-                                    onclick="document.location.href='home.html';">Login</button>
+                                    onclick="document.location.href='home.html';">Sign In</button>
                             <div class="clearfix">
                             <span class="margin-top padding-top-double font-large"><br>Forgot your password? <br>
                                 <a href="#">Create an account</a>
@@ -93,42 +88,7 @@
         <!-- /content/body -->
 
     </div>
-
-
-<!-- 
-<footer class="footer">
-        <p>&copy; 2015 WSO2 Inc. All Rights Reserved</p>
-</footer>
--->
-
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/assetmenu.js"></script>
-<script src="js/operationsmenu.js"></script>
-
-<script type="text/javascript">
-
-$( document ).ready(function() {
-
-    $('[data-toggle="tooltip"]').tooltip();   
-
-    $("[data-toggle=popover]").popover();
-
-    $(".ctrl-filter-type-switcher").popover({
-        html : true, 
-        content: function() {
-          return $('#content-filter-types').html();
-        }
-    });    
-
-	$('#nav').affix({
-	      offset: {
-	        top: $('header').height()
-	      }
-	});	 
-}); 
-
-</script>
-
 </body>
 </html>
