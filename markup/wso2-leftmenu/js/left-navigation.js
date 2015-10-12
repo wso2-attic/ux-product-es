@@ -1,7 +1,9 @@
 $(window).load(function(){
-    var animating = false;
 
-    $(".navigation a").click(function(e){
+    var animating = false;
+    var menu = 'navigation';
+
+    $("." + menu + "a").click(function(e){
         e.preventDefault();
 
         if(animating){
@@ -9,11 +11,9 @@ $(window).load(function(){
         }
 
         var el = $(this),
-            prev = $(".navigation > a:first");
-        distance = el.offset().top  - $(".navigation").offset().top,
-            prevNieghbour = prev.next(),
-            elNieghbour = el.next().length > 0 ? el.next() : el.prev();
-        isLastElClicked = el.next().length > 0 ? false : true;
+            prev = $("." + menu + " > a:first"),
+            distance = el.offset().top  - $(".navigation").offset().top,
+            isLastElClicked = el.next().length > 0 ? false : true;
 
         if (el.prev().length > 0) {
             animating = true;
@@ -22,7 +22,7 @@ $(window).load(function(){
                     top: -distance
                 }, 700)
             ).done(function () {
-                    el.insertBefore(prev).removeAttr('style').addClass('active')
+                    el.insertBefore(prev).css('top','0px').addClass('active');
                     if(isLastElClicked){
                         prev.removeClass('active');
                     }else{
@@ -35,5 +35,5 @@ $(window).load(function(){
 
                 });
         }
-    })
-})
+    });
+});

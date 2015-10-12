@@ -16,96 +16,94 @@
 * under the License.
 -->
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enterprise Store</title>
 
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom-common.css" rel="stylesheet">    
+    <link href="css/font-wso2.css" rel="stylesheet">
+    <link href="css/custom-common.css" rel="stylesheet">
     <link href="css/custom-desktop.css" rel="stylesheet">
     <link href="css/custom-theme.css" rel="stylesheet">
-    <link href="css/font-wso2.css" rel="stylesheet">
-
-
+    <link href="css/left-navigation.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-	<script src="js/html5shiv.min.js"></script>
-	<script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
 
 
-	<![endif]-->
+    <![endif]-->
 
 </head>
-
 <body>
-
-<div class="wr-modelpopup">
-    <div class="modelpopup-content"><!-- dynamic content --></div>
-    <div class="modelpopup-bg"></div>
-</div>
 
 <div class="container col-lg-12 col-md-12 col-sm-12">
 
-<!-- header -->
-<header>
-<div class="row wr-global-header">
-    <div class="col-xs-6 col-sm-7 col-lg-8 app-logo">
-        <a href="home-categories.html"><img src="images/logo.png" /><h2 class="app-title">Enterprise Store</h2></a>
-    </div>
-	<div class="col-xs-6 col-sm-5 col-lg-4 wr-auth-container">
-		<div class="wr-auth pull-right">
-            <div class="right padding-none">
-                <ul class="nav nav-pills float-right" role="tablist">
-                    <li class="uppercase white "><a class="register" href="#"><span class="ro-text">Register</span></a></li>
-                    <li class="uppercase white"><a class="login" href="#"><span class="ro-text">Login</span></a></li>
-                </ul>
+    <!-- header -->
+    <header>
+        <div class="row wr-global-header">
+            <div class="col-xs-6 col-sm-7 col-lg-8 app-logo">
+                <a href="home-categories.html"><img src="images/logo.png"/>
+
+                    <h2 class="app-title">Enterprise Store</h2></a>
             </div>
-		</div>
-	</div>
-</div>
-</header>
-<!-- /header -->
-<!-- secondary header - app bar -->
-<div id="nav" class="row wr-app-bar">
-	<div class="col-md-9 wr-action-container">
-        <div class="wr-asset-type-switcher">
-            <div class="ctrl-asset-type-switcher">
-                <div class="main">
+            <div class="col-xs-6 col-sm-5 col-lg-4 wr-auth-container">
+                <div class="wr-auth pull-right">
+                    <div class="right padding-none">
+                        <ul class="nav nav-pills float-right" role="tablist">
+                            <li class="uppercase white "><a class="register" href="#"><span
+                                    class="ro-text">Register</span></a></li>
+                            <li class="uppercase white"><a class="login" href="#"><span class="ro-text">Login</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <!-- secondary header - app bar -->
+    <div id="nav" class="row wr-app-bar">
+        <div class=" wr-action-container">
+            <div class="wr-asset-type-switcher">
+                <div class="left-menu">
                     <nav class="navigation">
                         <a href="#" class="active home">
-                            <span class="icon"><i class="fw fw-store"></i></span> <span class="content">ALL</span>
+                            <span class="icon"><i class="fw fw-store"></i></span> <span
+                                class="left-menu-item">ALL</span>
                         </a>
-                            <a href="#app_nav" class="green">
-                                <span class="icon"><i class="fw fw-wsdl"></i></span> <span class="content">WSDLs</span>
-                            </a>
+                        <a href="#app_nav" class="green">
+                            <span class="icon"><i class="fw fw-wsdl"></i></span> <span
+                                class="left-menu-item">WSDLs</span>
+                        </a>
                         <a href="#movies_nav" class="red">
-                            <span class="icon"><i class="fw fw-schema"></i></span> <span class="content">Schemas</span>
+                            <span class="icon"><i class="fw fw-schema"></i></span> <span
+                                class="left-menu-item">Schemas</span>
                         </a>
                         <a href="#music_nav" class="orange">
-                            <span class="icon"><i class="fw fw-soap"></i></span> <span class="content">SOAP Services</span>
+                            <span class="icon"><i class="fw fw-soap"></i></span> <span class="left-menu-item">SOAP Services</span>
                         </a>
                         <a href="#books_nav" class="yellow">
-                            <span class="icon"><i class="fw fw-policy"></i></span> <span class="content">Policies</span>
+                            <span class="icon"><i class="fw fw-policy"></i></span> <span
+                                class="left-menu-item">Policies</span>
                         </a>
                         <a href="#magazines_nav" class="purple">
-                            <span class="icon"><i class="fw fw-rest-service"></i></span> <span class="content">REST Services</span>
+                            <span class="icon"><i class="fw fw-rest-service"></i></span> <span class="left-menu-item">REST Services</span>
                         </a>
                         <a href="#devices_nav" class="blue">
-                            <span class="icon"><i class="fw fw-wadl"></i></span> <span class="content">WADLs</span>
+                            <span class="icon"><i class="fw fw-wadl"></i></span> <span
+                                class="left-menu-item">WADLs</span>
                         </a>
                         <a href="#devices_nav" class="grey">
-                            <span class="icon"><i class="fw fw-swagger"></i></span> <span class="content">Swaggers</span>
+                            <span class="icon"><i class="fw fw-swagger"></i></span> <span class="left-menu-item">Swaggers</span>
                         </a>
-
                     </nav>
                     <div class="tags-wrapper">
-                        <div class="tag-title"> Tags </div>
+                        <div class="tag-title"> Tags</div>
                         <div class="tag-content">
                             <label>Business</label>
                             <label>Comics</label>
@@ -122,486 +120,516 @@
                             <label>Sports</label>
                             <label>Travel & Local</label>
                             <label>Widgets</label>
+                            <div class="tag-more">more..</div>
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div><! menu Button -->
-        <div class="search">
+            <! menu Button -->
+            <div class="search">
 
-            <div class="input-group input-wrap">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <div class="input-group-btn">
-                    <button class="btn btn-default wrap-input-right" type="button" title="Search">
-                        <i class="fw fw-search" aria-hidden="true"></i>
-                    </button>
+                <div class="input-group input-wrap">
+                    <input type="text" class="form-control" placeholder="Search for...">
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-default wrap-input-right" type="button" title="Search">
+                            <i class="fw fw-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div><!--search--->
-	</div>
-    <div class="col-md-12 category-wrapper">
-        <div class="col-xs-1 col-sm-2 col-md-1 col-lg-1 left-col"></div>
-        <div class="col-xs-10 col-sm-8 col-md-4 col-lg-10">
-            <div class="category padding-top">
-                <a href="#" class="ico-filter ctrl-filter-category dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span >Select Category </span> </a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li><a tabindex="-1" href="#">Tools and Utilities</a></li>
-                    <li><a tabindex="-1" href="#">Entertainment</a></li>
-                    <li><a tabindex="-1" href="#">Gaming</a></li>
-                    <li><a tabindex="-1" href="#">Disk Utilities</a></li>
-                    <li><a tabindex="-1" href="#">Tools and Utilities</a></li>
-                    <li><a tabindex="-1" href="#">Entertainment</a></li>
-                    <li><a tabindex="-1" href="#">Gaming</a></li>
-                    <li><a tabindex="-1" href="#">Disk Utilities</a></li>
-                    <li><a tabindex="-1" href="#">Tools and Utilities</a></li>
-                    <li><a tabindex="-1" href="#">Entertainment</a></li>
-                    <li><a tabindex="-1" href="#">Gaming</a></li>
-                    <li><a tabindex="-1" href="#">Disk Utilities</a></li>
-                </ul>
+            <!--search--->
+        </div>
+        <div class="col-md-12 category-wrapper">
+            <div class="col-xs-1 col-sm-2 col-md-1 col-lg-1 left-col"></div>
+            <div class="col-xs-10 col-sm-8 col-md-4 col-lg-10">
+                <div class="category padding-top">
+                    <a href="#" class="ico-filter ctrl-filter-category dropdown-toggle" data-toggle="dropdown"
+                       aria-expanded="true"><span>Select Category </span> </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li><a tabindex="-1" href="#">Tools and Utilities</a></li>
+                        <li><a tabindex="-1" href="#">Entertainment</a></li>
+                        <li><a tabindex="-1" href="#">Gaming</a></li>
+                        <li><a tabindex="-1" href="#">Disk Utilities</a></li>
+                        <li><a tabindex="-1" href="#">Tools and Utilities</a></li>
+                        <li><a tabindex="-1" href="#">Entertainment</a></li>
+                        <li><a tabindex="-1" href="#">Gaming</a></li>
+                        <li><a tabindex="-1" href="#">Disk Utilities</a></li>
+                        <li><a tabindex="-1" href="#">Tools and Utilities</a></li>
+                        <li><a tabindex="-1" href="#">Entertainment</a></li>
+                        <li><a tabindex="-1" href="#">Gaming</a></li>
+                        <li><a tabindex="-1" href="#">Disk Utilities</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- secondary header - app bar -->
-<!-- content/body -->
-<div class="row ">
-	<div class="col-lg-12">
-		<div class="col-lg-12">
-            <div class="col-xs-1 col-sm-2 col-md-1 col-lg-1 left-col "></div>
-            <!-- content -->
-            <div class="col-xs-10 col-sm-9 col-md-9 col-lg-10 wr-content padding-none">
-                <!-- form content placeholder -->
-                <div class="section-top-margin"></div>
-                <div id="ast-container" class="ast-container ">
-                    <div class="container-fluid padding-none ">
-                        <div class="title">Recent WSDLs</div><!--title-->
-                        <div class="float-right"><a class="more" href="#">See More</a></div>
-                        <hr>
-                    </div>
-                </div>
-                <section >
-                    <div class="ctrl-wr-asset ">
-                    <div class="itm-ast">
-                        <div class="ast-img ">
-                            <img src="images/asset-icon-01.png"  class="img-responsive">
-                        </div>
-
-                        <div class="ast-desc ">
-                            <div class="ast-title padding">
-                                <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                <span class="ast-auth">Admin</span>
-                            </div>
-                            <div class="  col-xs-5 col-sm-9 col-md-9">
-                                <img src="images/icons/rating-stars.png">
-                            </div>
-                            <div class="  col-md-3">
-                                <div class="wr-filter-sort pull-right">
-                                    <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                    <div class="dropdown-menu">
-                                        <div class="cu-arrow"></div>
-                                        <div class="dropdown-menu-content">
-                                            <a class="filter-item uppercase">Download</a>
-                                            <a class="filter-item uppercase">Bookmark</a>
-                                            <a class="filter-item uppercase">More Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-02.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                    <div class="itm-ast">
-                       <div class="ast-img"><img src="images/asset-icon-03.png"  class="img-responsive"></div>
-                        <div class="ast-desc">
-                            <div class="ast-title padding">
-                                <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                <span class="ast-auth">Admin</span>
-                            </div>
-                            <div class=" col-xs-5 col-sm-9 col-md-9">
-                                <img src="images/icons/rating-stars.png">
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wr-filter-sort pull-right">
-                                    <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                    <div class="dropdown-menu">
-                                        <div class="cu-arrow"></div>
-                                        <div class="dropdown-menu-content">
-                                            <a class="filter-item uppercase">Download</a>
-                                            <a class="filter-item uppercase">Bookmark</a>
-                                            <a class="filter-item uppercase">More Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-04.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-05.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-06.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-08.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div><!--section-top-margin-->
-        </div>
-            <!-- Site details are here-->
+    <!-- secondary header - app bar -->
+    <!-- content/body -->
+    <div class="row ">
         <div class="col-lg-12">
-            <div class="col-xs-1 col-sm-2 col-md-1 col-lg-1 left-col "></div>
-            <div class="col-xs-10 col-sm-9 col-md-9 col-lg-10 padding-none">
-            <div id="ast-container" class="ast-container">
-                <div class="container-fluid section-top-margin padding-none">
-                    <div class="title">Recent Sites </div><!--title-->
-                    <div class="float-right"><a class="more" href="#">See More</a></div>
-                    <hr>
-                </div>
-            </div>
-            <section>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                            <div class="ast-img ">
-                                <img src="images/asset-icon-11.png"  class="img-responsive">
-                            </div>
+            <div class="col-lg-12">
+                <div class="col-xs-1 col-sm-2 col-md-1 col-lg-1 left-col "></div>
+                <!-- content -->
+                <div class="col-xs-10 col-sm-9 col-md-9 col-lg-10 wr-content padding-none">
+                    <!-- form content placeholder -->
+                    <div class="section-top-margin"></div>
+                    <div class="ast-container ">
+                        <div class="container-fluid padding-none ">
+                            <div class="title">Recent WSDLs</div>
+                            <!--title-->
+                            <div class="float-right"><a class="more" href="#">See More</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img ">
+                                    <img src="images/asset-icon-01.png" class="img-responsive">
+                                </div>
 
-                            <div class="ast-desc ">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class="  col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="  col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
+                                <div class="ast-desc ">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class="  col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="  col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                <div class="itm-ast">
-                    <div class="ast-img"><img src="images/asset-icon-16.png"  class="img-responsive"></div>
-                    <div class="ast-desc">
-                        <div class="ast-title padding">
-                            <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                            <span class="ast-auth">Admin</span>
-                        </div>
-                        <div class=" col-xs-5 col-sm-9 col-md-9">
-                            <img src="images/icons/rating-stars.png">
-                        </div>
-                        <div class="col-md-3">
-                            <div class="wr-filter-sort pull-right">
-                                <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                <div class="dropdown-menu">
-                                    <div class="cu-arrow"></div>
-                                    <div class="dropdown-menu-content">
-                                        <a class="filter-item uppercase">Download</a>
-                                        <a class="filter-item uppercase">Bookmark</a>
-                                        <a class="filter-item uppercase">More Details</a>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-02.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-03.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-04.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-05.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-06.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-08.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+                <!--section-top-margin-->
             </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-12.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
+            <!-- Site details are here-->
+            <div class="col-lg-12">
+                <div class="col-xs-1 col-sm-2 col-md-1 col-lg-1 left-col "></div>
+                <div class="col-xs-10 col-sm-9 col-md-9 col-lg-10 padding-none">
+                    <div class="ast-container">
+                        <div class="container-fluid section-top-margin padding-none">
+                            <div class="title">Recent Sites</div>
+                            <!--title-->
+                            <div class="float-right"><a class="more" href="#">See More</a></div>
+                            <hr>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img ">
+                                    <img src="images/asset-icon-11.png" class="img-responsive">
                                 </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
+
+                                <div class="ast-desc ">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class="  col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="  col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"> <img src="images/asset-icon-13.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-16.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-14.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-12.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-15.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-13.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ctrl-wr-asset ">
-                        <div class="itm-ast">
-                           <div class="ast-img"><img src="images/asset-icon-16.png"  class="img-responsive"></div>
-                            <div class="ast-desc">
-                                <div class="ast-title padding">
-                                    <h3 class="ast-name truncate">Stacked Line Chart</h3>
-                                    <span class="ast-auth">Admin</span>
-                                </div>
-                                <div class=" col-xs-5 col-sm-9 col-md-9">
-                                    <img src="images/icons/rating-stars.png">
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="wr-filter-sort pull-right">
-                                        <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list" data-toggle="dropdown"></a>
-                                        <div class="dropdown-menu">
-                                            <div class="cu-arrow"></div>
-                                            <div class="dropdown-menu-content">
-                                                <a class="filter-item uppercase">Download</a>
-                                                <a class="filter-item uppercase">Bookmark</a>
-                                                <a class="filter-item uppercase">More Details</a>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-14.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-            </section>
-            <!-- site details end here--> </div>
-		</div>
-		<!-- /content -->
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-15.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-left-menu-item">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ctrl-wr-asset ">
+                            <div class="itm-ast">
+                                <div class="ast-img"><img src="images/asset-icon-16.png" class="img-responsive"></div>
+                                <div class="ast-desc">
+                                    <div class="ast-title padding">
+                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <span class="ast-auth">Admin</span>
+                                    </div>
+                                    <div class=" col-xs-5 col-sm-9 col-md-9">
+                                        <img src="images/icons/rating-stars.png">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="wr-filter-sort pull-right">
+                                            <a href="#" class="ico-filter ctrl-filter-sort dropdown-toggle more-list"
+                                               data-toggle="dropdown"></a>
+
+                                            <div class="dropdown-menu">
+                                                <div class="cu-arrow"></div>
+                                                <div class="dropdown-menu-content">
+                                                    <a class="filter-item uppercase">Download</a>
+                                                    <a class="filter-item uppercase">Bookmark</a>
+                                                    <a class="filter-item uppercase">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- site details end here--> </div>
+            </div>
+            <!-- /content -->
+        </div>
+
     </div>
-
-	</div>
 </div>
 <!-- /content/body -->
-
-</div>
-
 <div id="content-filter-types" style="display: none">
     <div class="sort-title">Sort By</div>
     <div class="sort-options">
-    	<a href="#">Device Name<span class="ico-sort-asc"></span></a>
-    	<a href="#">OS</a>
-    	<a href="#">User</a>
-    	<a href="#">Model</a>   
+        <a href="#">Device Name<span class="ico-sort-asc"></span></a>
+        <a href="#">OS</a>
+        <a href="#">User</a>
+        <a href="#">Model</a>
     </div>
-</div>  
-
+</div>
 <!-- 
 <footer class="footer">
         <p>&copy; 2015 WSO2 Inc. All Rights Reserved</p>
@@ -610,10 +638,7 @@
 
 <script src="js/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/assetmenu.js"></script>
-<script src="js/operationsmenu.js"></script>
-<script src="js/left.js"></script>
-
+<script src="js/left-navigation.js"></script>
 
 
 </body>
