@@ -297,7 +297,15 @@ nav.navigation .second_level > .left-menu-item {
     width: 168px;
     margin: 5px 15px 0;
 }
-
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 100;
+    line-height: 2;
+    color: #333;
+    white-space: nowrap;
+}
 .dropdown-menu > .dropdown-menu-content {
     background-color: #F5F5F5;
 }
@@ -305,6 +313,11 @@ nav.navigation .second_level > .left-menu-item {
 .dropdown-menu-content > a.filter-item:hover {
     text-decoration: none;
     color: #3B579D;
+}
+.dropdown-menu> li a:hover {
+    background: #1a78d8;
+    cursor: pointer;
+    color: #fff;
 }
 
 /*==========  Non-Mobile First Method  ==========*/
