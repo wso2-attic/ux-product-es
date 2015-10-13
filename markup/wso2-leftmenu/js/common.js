@@ -42,12 +42,10 @@ $.fn.generateBgcolor = function(options){
                 colorR += letters[Math.floor(Math.random() * 16)];
             }
             $(this).css('background', colorR);
-            console.log("1");
         }else{
             //finite set of random colors
             var colorD = colors[Math.floor(Math.random()*colors.length)];
             $(this).css('background', colorD);
-            console.log("2");
         }
     });
 };
@@ -74,7 +72,6 @@ $.fn.generateBgcolor = function(options){
             var secondLine = str[1].charAt(0).toLowerCase();
         }
         catch(err) {
-            //console.log(err.message);
             if(typeof secondLine === "undefined"){
                 secondLine = "";
             }
