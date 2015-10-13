@@ -314,7 +314,7 @@
                                 </div>
                                 <div class="ast-desc">
                                     <div class="ast-title padding">
-                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <h3 class="ast-name ">Chart</h3>
                                         <span class="ast-auth">Admin</span>
                                     </div>
                                     <div class="col-xs-5 col-sm-9 col-md-9">
@@ -345,7 +345,7 @@
                                 </div>
                                 <div class="ast-desc">
                                     <div class="ast-title padding">
-                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <h3 class="ast-name ">App</h3>
                                         <span class="ast-auth">Admin</span>
                                     </div>
                                     <div class="col-xs-5 col-sm-9 col-md-9">
@@ -664,9 +664,9 @@
 <script src="js/common.js"></script>
 <script>
 
-
-
-    $(".setbgcolor").random_background_color("9");
+    $(".setbgcolor").generateBgcolor({
+        random:false
+    });
     $(".ast-name").each(function( index, element ) {
         $(element).nametoChar();
     });
