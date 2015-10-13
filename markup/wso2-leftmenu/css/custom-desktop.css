@@ -224,11 +224,18 @@ a.ast-type-item:hover {
 .ast-img {
     width: 100%;
     background: #ffffff;
+    height:145px;
 }
 
-.ast-img img {
+.ast-img img{
     width:100%;
     height: auto;
+}
+.ast-img .ast-name-icon{
+    color:#fff;
+    width:100%;
+    font-size:6.5em;
+    text-align:center;
 }
 
 .ast-desc {
