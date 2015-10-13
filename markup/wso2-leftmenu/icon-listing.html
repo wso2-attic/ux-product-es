@@ -580,7 +580,7 @@
                                 </div>
                                 <div class="ast-desc">
                                     <div class="ast-title padding">
-                                        <h3 class="ast-name ">Stacked Line Chart</h3>
+                                        <h3 class="ast-name ">3D Pie Chart</h3>
                                         <span class="ast-auth">Admin</span>
                                     </div>
                                     <div class="col-xs-5 col-sm-9 col-md-9">
@@ -661,65 +661,10 @@
 
 <script src="js/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/left-navigation.js"></script>
+<script src="js/common.js"></script>
 <script>
 
-    /**
-    * @description Random background color generator for thumbs
-    * @param {range} Color Range Value
-    * @return {Node} DOM Node
-    */
-    $.fn.random_background_color = function(range){
 
-        /*
-        if(!range){
-            range = 9;
-        }
-
-        return this.each(function(){
-            var color = '#'+Math.random().toString(range).substr(-6);
-            $(this).css('background', color);
-
-            console.log(color);
-        });
-        */
-
-
-            return this.each(function(){
-                var letters = '0123456789ABCDEF'.split('');
-                var color = '#';
-                for (var i = 0; i < 6; i++ ) {
-                    color += letters[Math.floor(Math.random() * 16)];
-                }
-                $(this).css('background', color);
-                console.log(color);
-            });
-    };
-
-
-
-    /**
-    * @description function to extract first two letters from a string
-    * @options customizations on how the colors should be generated
-    */
-
-(function ( $ ) {
-
-    $.fn.nametoChar = function( options ) {
-
-        var settings = $.extend({
-            // defaults
-        }, options );
-
-        var str = this.text();
-        var str = str.split(" ");
-        var firstLine = str[0].charAt(0);
-        var secondLine = str[1].charAt(0).toLowerCase();
-        return this.parent().parent().prev().children().text(firstLine+secondLine)
-
-    };
-
-}( jQuery ));
 
     $(".setbgcolor").random_background_color("9");
     $(".ast-name").each(function( index, element ) {
