@@ -76,7 +76,7 @@ $.fn.generateBgcolor = function(options){
                 secondLine = "";
             }
         }
-        return this.parent().parent().prev().children().text(firstLine+secondLine)
+        return this.parent().parent().prev().children("div").text(firstLine+secondLine)
 
     };
 }( jQuery ));

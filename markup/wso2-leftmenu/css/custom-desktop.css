@@ -236,8 +236,21 @@ a.ast-type-item:hover {
     width:100%;
     font-size:6.5em;
     text-align:center;
+    font-weight:200;
 }
-
+.ast-img .ast-type-icon{
+    display:block;
+    background:rgba(68, 68, 68, .7);
+    color:#fff;
+    width:32px;
+    height:32px;
+    position:absolute;
+    top:112px;
+}
+.ast-img .ast-type-icon i{
+    font-size:1.2em;
+    padding:10px 8px;
+}
 .ast-desc {
 	/*float:left;*/
 	margin-left:0;
