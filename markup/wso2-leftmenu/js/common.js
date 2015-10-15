@@ -8,12 +8,13 @@ $(window).load(function(){
 
 /**
 * @description Random background color generator for thumbs
-* @random can be true or false
+* @random - boolean, sets when to generate random or predefined colors. If false, palette will be ignored
+* @palette - array, an array of hex values to be randomized
 */
 (function ( $ ) {
 $.fn.generateBgcolor = function(options){
 
-    var colors = [
+    var defaultPalette = [
     "#F44336","#D32F2F","#B71C1C","#E91E63","#F06292","#D81B60","#AD1457","#880E4F","#9C27B0","#BA68C8",
     "#FF8A80","#FF5252","#FF1744","#D50000","#FF80AB","#FF4081","#F50057","#C51162","#EA80FC","#E040FB",
     "#D500F9","#AA00FF","#673AB7","#9575CD","#7E57C2","#5E35B1","#512DA8","#4527A0","#B388FF","#7C4DFF",
@@ -30,22 +31,23 @@ $.fn.generateBgcolor = function(options){
 
     var settings = $.extend({
         //defaults
-       random: false
+       definite: true,
+       palette: defaultPalette,
     }, options );
 
     return this.each(function(){
-        if(settings.random){
-            //infinite set of random colors
-            var letters = '0123456789ABCDEF'.split('');
-            var colorR = '#';
+        if(settings.definite){
+            //predefined set of random colors
+            var colorD = settings.palette[Math.floor(Math.random()*settings.palette.length)];
+            $(this).css('background', colorD);
+        }else{
+            //undefined set of random colors
+            var letters = '0123456789ABCDEF'.split(''),
+                colorR = '#';
             for (var i = 0; i < 6; i++ ) {
                 colorR += letters[Math.floor(Math.random() * 16)];
             }
             $(this).css('background', colorR);
-        }else{
-            //finite set of random colors
-            var colorD = colors[Math.floor(Math.random()*colors.length)];
-            $(this).css('background', colorD);
         }
     });
 };
@@ -53,41 +55,40 @@ $.fn.generateBgcolor = function(options){
 
 
 
-    /**
-    * @description function to extract first two letters from a string
-    * @options customizations on how the colors should be generated
-    */
-
+/**
+* @description function to extract first two letters from a string
+* @nameElement which element to extract the string from
+*/
 (function ( $ ) {
     $.fn.nametoChar = function( options ) {
 
         var settings = $.extend({
             // defaults
+            nameElement: ""
         }, options );
 
-        var str = this.text();
-        var str = str.split(" ");
+        var str = $(settings.nameElement).text();
+        str = str.split(" ");
         try {
-            var firstLine = str[0].charAt(0);
-            var secondLine = str[1].charAt(0).toLowerCase();
+            var firstChar = str[0].charAt(0);
+            var secondChar = str[1].charAt(0).toLowerCase();
         }
         catch(err) {
-            if(typeof secondLine === "undefined"){
-                secondLine = "";
+            if(typeof secondChar === 'undefined'){
+                secondChar = "";
             }
         }
-        return this.parent().parent().prev().children("div").text(firstLine+secondLine)
+        return this.text(firstChar+secondChar);
 
     };
 }( jQuery ));
 
 
 
-    /**
-    * @description function to animate left navigation menu item activation
-    * @options none
-    */
-
+/**
+* @description function to animate left navigation menu item activation
+* @options none
+*/
 (function ( $ ) {
 
     $.fn.animateLeftmenu = function( options ) {

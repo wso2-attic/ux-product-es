@@ -705,13 +705,20 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/common.js"></script>
 <script>
+$(window).load(function(){
 
     $(".setbgcolor").generateBgcolor({
-        random:false
+        definite:true
     });
-    $(".ast-name").each(function( index, element ) {
-        $(element).nametoChar();
+
+    $(".ast-name-icon").each(function( i, e ) {
+        var elem = $(this).parent().next().children().children(".ast-name");
+        $(this).nametoChar({
+            nameElement: elem
+        });
     });
+
+});
 
 </script>
 
