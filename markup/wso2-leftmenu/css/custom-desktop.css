@@ -232,20 +232,22 @@ a.ast-type-item:hover {
     height: auto;
 }
 .ast-img .ast-name-icon{
+
     color:#fff;
     width:100%;
     font-size:6.5em;
     text-align:center;
     font-weight:200;
+
 }
 .ast-img .ast-type-icon{
     display:block;
-    background:rgba(68, 68, 68, .7);
+    background:rgba(0, 0, 0, .3);
     color:#fff;
     width:32px;
     height:32px;
     position:absolute;
-    top:112px;
+    top:113px;
 }
 .ast-img .ast-type-icon i{
     font-size:1.2em;
