@@ -239,6 +239,16 @@ a.ast-type-item:hover {
     font-weight:200;
     text-transform:capitalize;
 }
+.ast-img .ast-name-img{
+    text-align:center;
+    width:100%;
+    overflow:hidden;
+}
+.ast-img .ast-name-img img{
+    width:auto;
+    max-height:145px;
+    size:100%;
+}
 .ast-img .ast-type-icon{
     display:block;
     background:rgba(0, 0, 0, .3);
