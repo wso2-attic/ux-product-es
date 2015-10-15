@@ -68,7 +68,7 @@ $.fn.generateBgcolor = function(options){
         }, options );
 
         var str = $(settings.nameElement).text();
-        str = str.split(" ");
+        str = str.trim().split(" ");
         try {
             var firstChar = str[0].charAt(0);
             var secondChar = str[1].charAt(0).toLowerCase();
