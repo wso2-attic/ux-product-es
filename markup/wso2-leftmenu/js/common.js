@@ -36,9 +36,33 @@ $.fn.generateBgcolor = function(options){
     }, options );
 
     return this.each(function(){
+
+        //traversal used inside iteration to avoid multiple plugin calls
+        var strAstName = $(this).next().children().children("h3").text(),
+            strAstType = $(this).next().children().children("span").text();
+
+        strAstName = strAstName.trim().split(" ");
+        strAstType = strAstType.trim().split(" ");
+        var catNameType = strAstName.concat(strAstType);
+
+
+        try {
+            var firstChar = catNameType[0][0],
+                secondChar = catNameType[1][0],
+                thirdChar = catNameType[2][0];
+        }
+        catch(err) {
+            //console.log(err.message);
+            if(typeof firstChar === 'undefined'){firstChar = "";}
+            if(typeof secondChar === 'undefined'){secondChar = "";}
+            if(typeof thirdChar === 'undefined'){thirdChar = "";}
+        }
+
         if(settings.definite){
-            //predefined set of random colors
-            var colorD = settings.palette[Math.floor(Math.random()*settings.palette.length)];
+        /*predefined set of random colors **var colorD = settings.palette[Math.floor(Math.random()*settings.palette.length)];***/
+            //predefined set of indexed colors
+            var magicNumber = getNumberFromString(firstChar+secondChar+thirdChar) % settings.palette.length,
+                colorD = settings.palette[magicNumber];
             $(this).css('background', colorD);
         }else{
             //undefined set of random colors
@@ -50,6 +74,15 @@ $.fn.generateBgcolor = function(options){
             $(this).css('background', colorR);
         }
     });
+
+    function getNumberFromString(str) {
+        var out = 0, len = str.length, pos = len;
+        while (--pos > -1) {
+            out += (str.charCodeAt(pos) - 64) * Math.pow(26, len - 1 - pos);
+        }
+        //ignore signed values for numbers in the string
+        return Math.abs(out);
+    }
 };
 }( jQuery ));
 
