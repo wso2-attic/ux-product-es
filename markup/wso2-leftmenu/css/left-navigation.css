@@ -296,10 +296,13 @@ nav.navigation .second_level > .left-menu-item {
     border: 1px solid #E8E8E8;
     margin-right: 7px;
     font-size: 12px;
+    color: #333;
+    cursor: pointer;
 }
 .tag-label:hover{
     background-color: #C9E4FF;
     border: 1px solid #C9E4FF;
+    text-decoration: none;
 }
 .alert{margin-bottom: 0px;}
 .alert-dismissable .close, .alert-dismissible .close{right:-4px;
