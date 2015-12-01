@@ -500,3 +500,6 @@ a.ctrl-filter-category:hover {
     float: none;
     margin: 0 auto;
 }
+.error-alert{
+	background-color: #FFE7E8;
+}
